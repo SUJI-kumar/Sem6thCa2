@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_below="@+id/tool"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tool"
+        android:gravity="center_horizontal"
+        android:title="DESIGNED BY SUJIT SINGH"
+        android:titleMarginStart="100dp"
+        android:titleTextColor="@android:color/black"
+        android:background="@drawable/back"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/f1"
+            android:name="com.example.sujitassignmenttwo.fragment_half1"
+            android:layout_width="166dp"
+            android:layout_height="560dp"
+            android:layout_marginTop="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/f2"
+                android:name="com.example.sujitassignmenttwo.fragment_half2"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="0dp" />
+
+            <fragment
+                android:id="@+id/f3"
+                android:name="com.example.sujitassignmenttwo.fragmentvedio2"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:layout_marginTop="0dp" />
+
+            <fragment
+                android:id="@+id/f4"
+                android:name="com.example.sujitassignmenttwo.fragmentvedio3"
+                android:layout_width="match_parent"
+                android:layout_height="218dp"
+                android:layout_marginTop="0dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
